@@ -31,7 +31,7 @@ const clientSecret = getRequiredEnvVar("AZURE_CLIENT_SECRET")
 const secret = getRequiredEnvVar("RADIUS_SECRET")
 
 // Dominio por defecto
-const DEFAULT_DOMAIN = "gamutvisual.pe"
+const DEFAULT_DOMAIN = getRequiredEnvVar("DEFAULT_DOMAIN")
 
 class RadiusServer {
   constructor() {
